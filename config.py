@@ -7,28 +7,28 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH", "")
+API_ID = int(getenv("20931654", ""))
+API_HASH = getenv("13fcf3fbf97dfdfa4b55810a51706d5e", "")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", None)
+BOT_TOKEN = getenv("6469443535:AAGo05fRyGab0-BwBXawd8RmdFKv2WOlMiw", None)
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://myMusicBot:myMusicBot1234@atlascluster.yq7734n.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 180))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("-1002009307077", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "6203163206"))
+OWNER_ID = int(getenv("551603105", "6203163206"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("micredomuisicbot")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("HRKU-2c474dfe-446d-4dc6-8f1c-84e1afef360b")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO", "https://github.com/Learningbots79/LB_Music",
@@ -61,11 +61,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
+STRING1 = getenv("BQE_ZEYATWvqBtDyZRCUufkqmx_J7gXR6xL7p3p2pICljpNbMLKMI0hEL594tTWn5kGi9XrgDSGy-qfpVXhDXH43L_MlCqGxeohS5zRxSdTBrx7RfSeGvj6t9LXV8MncABDnaBjuPCNUC-LZ9-aIQlSq5lubk_m7MS4k2pDViZWTb3cHeMo72MdWipOE2thFmJr7B8s8ds_rkuYNdqVZQxDmFVnur2Qw36Nhu1iCbMMzqs_12fAssYJj23lbjaGfBEZYCsxC6WZ5b6A1PxveBOwiLXOoFKEy74IHq7-O_h-UkDgbGiMTk_0kZx41XKdBCO01WZ23trmoLTiUaMgkz3W5HwmgAAAAAg4MuhAA", None)
+STRING2 = getenv("BQE_ZEYATWvqBtDyZRCUufkqmx_J7gXR6xL7p3p2pICljpNbMLKMI0hEL594tTWn5kGi9XrgDSGy-qfpVXhDXH43L_MlCqGxeohS5zRxSdTBrx7RfSeGvj6t9LXV8MncABDnaBjuPCNUC-LZ9-aIQlSq5lubk_m7MS4k2pDViZWTb3cHeMo72MdWipOE2thFmJr7B8s8ds_rkuYNdqVZQxDmFVnur2Qw36Nhu1iCbMMzqs_12fAssYJj23lbjaGfBEZYCsxC6WZ5b6A1PxveBOwiLXOoFKEy74IHq7-O_h-UkDgbGiMTk_0kZx41XKdBCO01WZ23trmoLTiUaMgkz3W5HwmgAAAAAg4MuhAA", None)
+STRING3 = getenv("BQE_ZEYATWvqBtDyZRCUufkqmx_J7gXR6xL7p3p2pICljpNbMLKMI0hEL594tTWn5kGi9XrgDSGy-qfpVXhDXH43L_MlCqGxeohS5zRxSdTBrx7RfSeGvj6t9LXV8MncABDnaBjuPCNUC-LZ9-aIQlSq5lubk_m7MS4k2pDViZWTb3cHeMo72MdWipOE2thFmJr7B8s8ds_rkuYNdqVZQxDmFVnur2Qw36Nhu1iCbMMzqs_12fAssYJj23lbjaGfBEZYCsxC6WZ5b6A1PxveBOwiLXOoFKEy74IHq7-O_h-UkDgbGiMTk_0kZx41XKdBCO01WZ23trmoLTiUaMgkz3W5HwmgAAAAAg4MuhAA", None)
+STRING4 = getenv("BQE_ZEYATWvqBtDyZRCUufkqmx_J7gXR6xL7p3p2pICljpNbMLKMI0hEL594tTWn5kGi9XrgDSGy-qfpVXhDXH43L_MlCqGxeohS5zRxSdTBrx7RfSeGvj6t9LXV8MncABDnaBjuPCNUC-LZ9-aIQlSq5lubk_m7MS4k2pDViZWTb3cHeMo72MdWipOE2thFmJr7B8s8ds_rkuYNdqVZQxDmFVnur2Qw36Nhu1iCbMMzqs_12fAssYJj23lbjaGfBEZYCsxC6WZ5b6A1PxveBOwiLXOoFKEy74IHq7-O_h-UkDgbGiMTk_0kZx41XKdBCO01WZ23trmoLTiUaMgkz3W5HwmgAAAAAg4MuhAA", None)
+STRING5 = getenv("BQE_ZEYATWvqBtDyZRCUufkqmx_J7gXR6xL7p3p2pICljpNbMLKMI0hEL594tTWn5kGi9XrgDSGy-qfpVXhDXH43L_MlCqGxeohS5zRxSdTBrx7RfSeGvj6t9LXV8MncABDnaBjuPCNUC-LZ9-aIQlSq5lubk_m7MS4k2pDViZWTb3cHeMo72MdWipOE2thFmJr7B8s8ds_rkuYNdqVZQxDmFVnur2Qw36Nhu1iCbMMzqs_12fAssYJj23lbjaGfBEZYCsxC6WZ5b6A1PxveBOwiLXOoFKEy74IHq7-O_h-UkDgbGiMTk_0kZx41XKdBCO01WZ23trmoLTiUaMgkz3W5HwmgAAAAAg4MuhAA", None)
 
 
 BANNED_USERS = filters.user()
